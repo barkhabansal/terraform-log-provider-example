@@ -7,6 +7,9 @@ terraform {
 }
 
 provider "log-provider" {
+  platform = "private_cloud"
+  region = "stl"
+  environment = "non-prod"
 }
 
 resource "log-provider_log" "barkha-log" {
