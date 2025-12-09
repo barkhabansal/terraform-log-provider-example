@@ -2,7 +2,6 @@ terraform {
   required_providers {
     log-provider = {
       source = "local/log-provider"
-      version = "0.0.1"
     }
   }
 }
@@ -10,6 +9,6 @@ terraform {
 provider "log-provider" {
 }
 
-resource "log-provider-log" "barkha-log" {
+resource "log-provider_log" "barkha-log" {
   message = "hello ME :)"
 }
